@@ -1,10 +1,10 @@
-# ATGPred-FL
+# iAVP-DRLF
 
 
 # 1 Description
-Autophagy is a conservative ‘self-eating’ process during biological evolution. Accurately identification of autophagy proteins (ATGs) is crucially important to reveal their biological functions. Here, we developed the first machine learning-based software that enables the classification of proteins into ATGs or non-ATGs. ATGPred-FL, which identifies ATGs using feature representation learning scheme and support vector machine algorithm. It has the potential to facilitate future computational work in this field.
+Plant vacuoles are the most important organelles for plant growth, development, and defense, and these play important roles in many types of stress responses. An important function of vacuole proteins is the transport of various classes of amino acids, ions, sugars, and other molecules. Accurate identification of autophagy proteins is crucial for revealing their biological functions. Here, we developed a new machine learning-based software that enables the classification of proteins into PVPs or non-PVPs specifically and effectively. This predictive software was designed using a light gradient boosting machine classifier and hybrid features composed of deep representation learning feature and adaptive skip dipeptide composition feature. It has the potential to facilitate future computational work in this field.
 Webserver and datasets available at:
-http://lab.malab.cn/~acy/ATGPred-FL/ 
+http://lab.malab.cn/~acy/iPVP-DRLF.
 
 
 # 2 Requirements
@@ -19,14 +19,11 @@ tape_proteins==0.5
 sklearn==1.0.1
 lightgbm==3.1.1
 
-For convenience, we strongly recommended users to install the Anaconda Python 3.8.5
-(or above) in your local computer.
-
 
 # 3 Running
-Changing working dir to ATGPred-master, and then running the following command:
+Changing working dir to iAVP-master, and then running the following command:
 
-python ATGPred.py -i test.fasta -o prediction_results.csv
+python iAVP-DRLF.py -i test.fasta -o prediction_results.csv
 
 -i: input file in fasta format
 -o output file name
