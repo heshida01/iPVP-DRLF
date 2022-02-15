@@ -35,4 +35,5 @@ Changing working dir to iAVP-master, and then running the following command:
 python iAVP-DRLF.py -i test.fasta -o prediction_results.csv
 
 -i: input file in fasta format
+
 -o output file name
