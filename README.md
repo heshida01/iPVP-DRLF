@@ -9,7 +9,7 @@ http://lab.malab.cn/~acy/ATGPred-FL/
 
 # 2 Requirements
 Before running, please make sure the following packages are installed in Python environment:
-python==3.7 (may work with earlier versions, not tested)
+python==3.7
 numpy==1.20.3
 pandas==1.3.5
 pandas==1.0.1
