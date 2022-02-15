@@ -1,4 +1,4 @@
-# iAVP-DRLF
+# iPVP-DRLF
 
 
 # 1 Description
@@ -30,7 +30,7 @@ lightgbm==3.1.1
 
 
 # 3 Running
-Changing working dir to iAVP-master, and then running the following command:
+Changing working dir to iAVP-DRLF-main, and then running the following command:
 
 python iAVP-DRLF.py -i test.fasta -o prediction_results.csv
 
