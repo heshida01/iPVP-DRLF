@@ -36,4 +36,4 @@ python iAVP-DRLF.py -i test.fasta -o prediction_results.csv
 
 -i: input file in fasta format
 
--o output file name
+-o: output file name
