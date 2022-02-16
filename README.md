@@ -12,21 +12,23 @@ Before running, please make sure the following packages are installed in Python 
 
 python==3.7
 
+pytorch==1.4.0
+
+tape_proteins==0.5
+
+rich==9.12.4
+
+lightgbm==3.1.1
+
 numpy==1.20.3
 
 pandas==1.3.5
 
 joblib==1.0.1
 
-rich==9.12.4
-
-pytorch==1.4.0
-
-tape_proteins==0.5
-
 scikit-learn==1.0.2
 
-lightgbm==3.1.1
+
 
 
 # 3 Running
