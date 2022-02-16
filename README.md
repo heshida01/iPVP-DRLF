@@ -16,7 +16,7 @@ numpy==1.20.3
 
 pandas==1.3.5
 
-pandas==1.0.1
+joblib==1.0.1
 
 rich==9.12.4
 
@@ -24,7 +24,7 @@ pytorch==1.4.0
 
 tape_proteins==0.5
 
-sklearn==1.0.1
+scikit-learn==1.0.2
 
 lightgbm==3.1.1
 
