@@ -12,7 +12,6 @@ import read_fasta_sequences
 import numpy as np
 import pandas as pd
 import joblib
-from check_sequences import *
 import feature_selection
 import argparse
 import time
