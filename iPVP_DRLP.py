@@ -29,10 +29,8 @@ if not os.path.exists("results"):
 def predict(fastas):
     encoding = []
     print("Sequence encoding......")
-    print(fastas)
     UniRep_features = UniRep_Embed(fastas)
     new_UniRep_features = feature_selection.select_UniRep_features(UniRep_features)
-
     ASDC_features = get_ASDC(fastas)
     new_ASDC_feature = feature_selection.select_ASDC_features(ASDC_features)
     encoding.append(new_ASDC_feature)
@@ -44,11 +42,9 @@ def predict(fastas):
     scaled_feature = scale.transform(feature)
     model = joblib.load('./models/saved_model.pkl')
     y_pred_prob = model.predict_proba(scaled_feature)
+    y_pred = model.predict(scaled_feature)
 
-    df_out = pd.DataFrame(np.zeros((y_pred_prob.shape[0], 3)),
-                          columns=["Sequence_name", "Prediction", "probability"])
-    y_pred = model.predict(feature)
-
+    df_out = pd.DataFrame(np.zeros((y_pred_prob.shape[0], 3)),columns=["Sequence_name", "Prediction", "probability"])
     for i in range(y_pred.shape[0]):
         df_out.iloc[i, 0] = str(sequence_names[i])
         if y_pred_prob[i, 1] >= 0.5:
