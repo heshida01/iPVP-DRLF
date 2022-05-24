@@ -32,7 +32,7 @@ scikit-learn==1.0.2
 
 
 # 3 Running
-Down load model [here](http://baidu.com)
+Down load model [here](http://39.100.246.211:7000/)
 
 Changing working dir to iAVP-DRLF-main, and then running the following command:
 
