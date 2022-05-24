@@ -36,7 +36,7 @@ Download the BiLSTM embedding model [here](http://121.40.214.145:8080/iPVP-DRLP)
 
 Changing working dir to iPVP-DRLF-main, and then running the following command:
 
-python iAVP-DRLF.py -i test.fasta -o prediction_results.csv
+python iPVP-DRLF.py -i test.fasta -o prediction_results.csv
 
 -i: input file in fasta format
 
