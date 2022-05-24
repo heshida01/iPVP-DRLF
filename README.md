@@ -32,7 +32,7 @@ scikit-learn==1.0.2
 
 
 # 3 Running
-Download the BiLSTM embedding model [here](http://121.40.214.145:8080/iPVP-DRLP), and put it in the directory named "model";
+Download the BiLSTM embedding model [here](http://121.40.214.145:8080/iPVP-DRLP), and put it in the directory named "Model";
 
 Changing working dir to iAVP-DRLF-main, and then running the following command:
 
