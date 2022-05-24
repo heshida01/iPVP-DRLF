@@ -18,8 +18,8 @@ from src.features import get_feature
 
 warnings.filterwarnings('ignore')
 
-if not os.path.exists("results"):
-    os.makedirs("results")
+if not os.path.exists("Results"):
+    os.makedirs("Results")
 
 
 
@@ -42,9 +42,9 @@ def read_protein_sequences(file):
 
 def predict(seqs):
     final_feature = get_feature(seqs)
-    scale = joblib.load('./models/scaler.pkl')
+    scale = joblib.load('./Models/scaler.pkl')
     scaled_UniRep_features = scale.transform(final_feature)
-    model = joblib.load('./models/saved_LGBM_model.pkl')
+    model = joblib.load('./Models/saved_LGBM_model.pkl')
     y_pred_prob = model.predict_proba(scaled_UniRep_features)
 
     df_out = pd.DataFrame(np.zeros((y_pred_prob.shape[0], 3)),columns=["Sequence_name", "Prediction", "probability"])
