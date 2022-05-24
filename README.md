@@ -32,7 +32,7 @@ scikit-learn==1.0.2
 
 
 # 3 Running
-Down load model [here](http://121.40.214.145:8080/iPVP-DRLP/)
+Down load model [here](http://121.40.214.145:8080/iPVP-DRLP/BiLSTM_embed.model)
 
 Changing working dir to iAVP-DRLF-main, and then running the following command:
 
