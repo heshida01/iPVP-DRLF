@@ -12,7 +12,7 @@ Before running, please make sure the following packages are installed in Python 
 
 python==3.7
 
-pytorch==1.4.0
+pytorch==1.3.0
 
 tape_proteins==0.5
 
